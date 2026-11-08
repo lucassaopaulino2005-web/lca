@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Homenagem de aniversário para Robson, feita por Emilly e Lucas.">
+  <title>Feliz Aniversário, Robson! ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="confetti"></div>
+
+  <header class="topbar">
+    <div class="crest" aria-label="Tema São Paulo FC">
+      <span>SP</span>
+    </div>
+    <div class="brand">
+      <span>HOMENAGEM ESPECIAL</span>
+      <strong>ROBSON</strong>
+    </div>
+    <button class="music-btn" id="musicBtn" type="button" aria-label="Ativar efeito sonoro">
+      ♫ <span>Música</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="badge">🔴 ⚪ ⚫</div>
+        <p class="eyebrow">Hoje é dia de celebrar uma pessoa muito especial</p>
+        <h1>Feliz Aniversário,<br><span>Robson!</span></h1>
+        <p class="hero-text">
+          Uma pequena homenagem de <b>Emilly e Lucas</b> para mostrar o quanto
+          você é importante para nós.
+        </p>
+        <a href="#mensagem" class="main-btn">Ver homenagem ↓</a>
+      </div>
+    </section>
+
+    <section id="mensagem" class="message-section">
+      <div class="section-title">
+        <span>❤️</span>
+        <h2>Para o nosso pai</h2>
+        <p>Com carinho, Emilly e Lucas</p>
+      </div>
+
+      <div class="message-card">
+        <div class="quote-mark">“</div>
+        <p>
+          Pai, hoje é o seu dia! Queremos aproveitar este momento para
+          agradecer por tudo que você faz por nós, por cada conselho,
+          cada momento e por estar sempre ao nosso lado.
+        </p>
+        <p>
+          Que seu novo ano seja cheio de saúde, felicidade, paz e muitos
+          momentos bons ao lado de quem ama você. Que nunca faltem motivos
+          para sorrir e comemorar.
+        </p>
+        <p class="final-message">
+          <strong>Feliz aniversário, pai!</strong><br>
+          Nós te amamos muito. ❤️<br>
+          <span>— Emilly e Lucas</span>
+        </p>
+      </div>
+    </section>
+
+    <section class="photos-section">
+      <div class="section-title light">
+        <span>📸</span>
+        <h2>Nossos momentos</h2>
+        <p>Algumas lembranças especiais</p>
+      </div>
+
+      <div class="gallery">
+        <button class="photo-card large" data-index="0" type="button">
+          <img src="imagens/foto-familia-1.jpeg" alt="Robson com Emilly e Lucas">
+          <span>Um momento em família ❤️</span>
+        </button>
+        <button class="photo-card" data-index="1" type="button">
+          <img src="imagens/foto-familia-2.jpeg" alt="Robson com os filhos em uma celebração">
+          <span>Momentos que ficam</span>
+        </button>
+        <button class="photo-card" data-index="2" type="button">
+          <img src="imagens/foto-familia-3.jpeg" alt="Robson com Emilly e Lucas">
+          <span>Juntos, sempre</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="sp-section">
+      <div class="sp-symbol">
+        <span>SP</span>
+      </div>
+      <div>
+        <p class="eyebrow">Para um torcedor especial</p>
+        <h2>Que seu ano seja<br>cheio de vitórias!</h2>
+        <p>
+          Com a mesma paixão de um torcedor pelo seu time,
+          desejamos que você tenha um ano incrível, cheio de
+          conquistas, alegrias e momentos inesquecíveis.
+        </p>
+      </div>
+    </section>
+
+    <section class="ending">
+      <div class="stars">★ ★ ★</div>
+      <h2>Parabéns, Robson!</h2>
+      <p>Com todo o amor dos seus filhos,</p>
+      <div class="names">
+        <span>EMILLY</span>
+        <i>❤️</i>
+        <span>LUCAS</span>
+      </div>
+      <button class="celebrate-btn" id="celebrateBtn" type="button">
+        🎉 Comemorar!
+      </button>
+    </section>
+  </main>
+
+  <footer>
+    Feito com ❤️ por Emilly e Lucas para Robson
+  </footer>
+
+  <div class="modal" id="photoModal" aria-hidden="true">
+    <button class="modal-close" id="modalClose" type="button" aria-label="Fechar">×</button>
+    <button class="modal-arrow prev" id="prevPhoto" type="button" aria-label="Foto anterior">‹</button>
+    <img id="modalImage" src="" alt="">
+    <button class="modal-arrow next" id="nextPhoto" type="button" aria-label="Próxima foto">›</button>
+    <p id="modalCaption"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
